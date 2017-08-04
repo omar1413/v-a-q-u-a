@@ -1,0 +1,17 @@
+{
+  "data": {"url": "data/seattle-weather.csv", "formatType": "csv"},
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "timeUnit": "month",
+      "axis": {"title": "Month of the year"}
+    },
+    "y": {
+      "field": "*",
+      "type": "quantitative",
+      "aggregate": "count"
+    }
+  }
+}

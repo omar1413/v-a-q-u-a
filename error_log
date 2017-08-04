@@ -1,0 +1,50 @@
+[23-May-2017 17:19:44 UTC] PHP Warning:  mysqli::mysqli(): (42000/1044): Access denied for user 'mai'@'localhost' to database 'q2a' in /home/vaqua/public_html/vaqua/qa-include/qa-db.php on line 83
+[23-May-2017 17:19:44 UTC] PHP Question2Answer MySQL connect error 1044: Access denied for user 'mai'@'localhost' to database 'q2a'
+[23-May-2017 17:21:07 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/vaqua/public_html/vaqua/test.php on line 4
+[23-May-2017 17:21:07 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/vaqua/public_html/vaqua/test.php on line 7
+[23-May-2017 17:21:07 UTC] PHP Notice:  Trying to get property of non-object in /home/vaqua/public_html/vaqua/test.php on line 10
+[23-May-2017 17:21:07 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/vaqua/public_html/vaqua/test.php on line 39
+[23-May-2017 17:21:07 UTC] PHP Notice:  Trying to get property of non-object in /home/vaqua/public_html/vaqua/test.php on line 41
+[23-May-2017 17:21:07 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/vaqua/public_html/vaqua/test.php on line 87
+[23-May-2017 17:24:02 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/vaqua/public_html/vaqua/test.php on line 4
+[23-May-2017 17:24:02 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/vaqua/public_html/vaqua/test.php on line 7
+[23-May-2017 17:24:02 UTC] PHP Notice:  Trying to get property of non-object in /home/vaqua/public_html/vaqua/test.php on line 10
+[23-May-2017 17:24:02 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/vaqua/public_html/vaqua/test.php on line 39
+[23-May-2017 17:24:02 UTC] PHP Notice:  Trying to get property of non-object in /home/vaqua/public_html/vaqua/test.php on line 41
+[23-May-2017 17:24:02 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/vaqua/public_html/vaqua/test.php on line 87
+[23-May-2017 17:24:19 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/vaqua/public_html/vaqua/test.php on line 4
+[23-May-2017 17:24:19 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/vaqua/public_html/vaqua/test.php on line 7
+[23-May-2017 17:24:19 UTC] PHP Notice:  Trying to get property of non-object in /home/vaqua/public_html/vaqua/test.php on line 10
+[23-May-2017 17:24:19 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/vaqua/public_html/vaqua/test.php on line 39
+[23-May-2017 17:24:19 UTC] PHP Notice:  Trying to get property of non-object in /home/vaqua/public_html/vaqua/test.php on line 41
+[23-May-2017 17:24:19 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/vaqua/public_html/vaqua/test.php on line 87
+[23-May-2017 17:31:05 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/vaqua/public_html/vaqua/test.php on line 4
+[23-May-2017 17:31:05 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/vaqua/public_html/vaqua/test.php on line 7
+[23-May-2017 17:31:05 UTC] PHP Notice:  Trying to get property of non-object in /home/vaqua/public_html/vaqua/test.php on line 10
+[23-May-2017 17:31:05 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/vaqua/public_html/vaqua/test.php on line 39
+[23-May-2017 17:31:05 UTC] PHP Notice:  Trying to get property of non-object in /home/vaqua/public_html/vaqua/test.php on line 41
+[23-May-2017 17:31:05 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/vaqua/public_html/vaqua/test.php on line 87
+[23-May-2017 17:31:36 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/vaqua/public_html/vaqua/test.php on line 4
+[23-May-2017 17:31:36 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/vaqua/public_html/vaqua/test.php on line 7
+[23-May-2017 17:31:36 UTC] PHP Notice:  Trying to get property of non-object in /home/vaqua/public_html/vaqua/test.php on line 10
+[23-May-2017 17:31:36 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/vaqua/public_html/vaqua/test.php on line 39
+[23-May-2017 17:31:36 UTC] PHP Notice:  Trying to get property of non-object in /home/vaqua/public_html/vaqua/test.php on line 41
+[23-May-2017 17:31:36 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/vaqua/public_html/vaqua/test.php on line 87
+[23-May-2017 17:45:35 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/vaqua/public_html/vaqua/test.php on line 4
+[23-May-2017 17:45:35 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/vaqua/public_html/vaqua/test.php on line 7
+[23-May-2017 17:45:35 UTC] PHP Notice:  Trying to get property of non-object in /home/vaqua/public_html/vaqua/test.php on line 10
+[23-May-2017 17:45:35 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/vaqua/public_html/vaqua/test.php on line 39
+[23-May-2017 17:45:35 UTC] PHP Notice:  Trying to get property of non-object in /home/vaqua/public_html/vaqua/test.php on line 41
+[23-May-2017 17:45:35 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/vaqua/public_html/vaqua/test.php on line 87
+[23-May-2017 18:00:06 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/vaqua/public_html/vaqua/test.php on line 4
+[23-May-2017 18:00:06 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/vaqua/public_html/vaqua/test.php on line 7
+[23-May-2017 18:00:06 UTC] PHP Notice:  Trying to get property of non-object in /home/vaqua/public_html/vaqua/test.php on line 10
+[23-May-2017 18:00:06 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/vaqua/public_html/vaqua/test.php on line 39
+[23-May-2017 18:00:06 UTC] PHP Notice:  Trying to get property of non-object in /home/vaqua/public_html/vaqua/test.php on line 41
+[23-May-2017 18:00:06 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/vaqua/public_html/vaqua/test.php on line 87
+[17-Jul-2017 16:14:49 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/vaqua/public_html/vaqua/test.php on line 4
+[17-Jul-2017 16:14:49 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/vaqua/public_html/vaqua/test.php on line 7
+[17-Jul-2017 16:14:49 UTC] PHP Notice:  Trying to get property of non-object in /home/vaqua/public_html/vaqua/test.php on line 10
+[17-Jul-2017 16:14:49 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/vaqua/public_html/vaqua/test.php on line 39
+[17-Jul-2017 16:14:49 UTC] PHP Notice:  Trying to get property of non-object in /home/vaqua/public_html/vaqua/test.php on line 41
+[17-Jul-2017 16:14:49 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/vaqua/public_html/vaqua/test.php on line 87

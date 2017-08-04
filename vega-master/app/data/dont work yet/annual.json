@@ -1,0 +1,97 @@
+[
+  {
+    "Source": "GCAG",
+    "Year": "2016",
+    "Mean": "0.9363"
+  },
+  {
+    "Source": "GISTEMP",
+    "Year": "2016",
+    "Mean": "0.99"
+  },
+  {
+    "Source": "GCAG",
+    "Year": "2015",
+    "Mean": "0.8998"
+  },
+  {
+    "Source": "GISTEMP",
+    "Year": "2015",
+    "Mean": "0.87"
+  },
+  {
+    "Source": "GCAG",
+    "Year": "2014",
+    "Mean": "0.7408"
+  },
+  {
+    "Source": "GISTEMP",
+    "Year": "2014",
+    "Mean": "0.74"
+  },
+  {
+    "Source": "GCAG",
+    "Year": "2013",
+    "Mean": "0.6679"
+  },
+  {
+    "Source": "GISTEMP",
+    "Year": "2013",
+    "Mean": "0.65"
+  },
+  {
+    "Source": "GCAG",
+    "Year": "2012",
+    "Mean": "0.6240"
+  },
+  {
+    "Source": "GISTEMP",
+    "Year": "2012",
+    "Mean": "0.63"
+  },
+  {
+    "Source": "GCAG",
+    "Year": "2011",
+    "Mean": "0.5788"
+  },
+  {
+    "Source": "GISTEMP",
+    "Year": "2011",
+    "Mean": "0.6"
+  },
+  {
+    "Source": "GCAG",
+    "Year": "2010",
+    "Mean": "0.7014"
+  },
+  {
+    "Source": "GISTEMP",
+    "Year": "2010",
+    "Mean": "0.71"
+  },
+  {
+    "Source": "GCAG",
+    "Year": "2009",
+    "Mean": "0.6367"
+  },
+  {
+    "Source": "GISTEMP",
+    "Year": "2009",
+    "Mean": "0.64"
+  },
+  {
+    "Source": "GCAG",
+    "Year": "2008",
+    "Mean": "0.5419"
+  },
+  {
+    "Source": "GISTEMP",
+    "Year": "2008",
+    "Mean": "0.54"
+  },
+  {
+    "Source": "GCAG",
+    "Year": "2007",
+    "Mean": "0.6100"
+  }
+]

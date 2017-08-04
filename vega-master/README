@@ -1,0 +1,17 @@
+These supplementary materials provide a proof-of-concept implementation of the
+extensions to Vega-Lite discussed in the paper. Unit, composite, and interactive
+Vega-Lite specifications are preloaded in a live editor. The canonical Vega
+examples are also provided to support Section 6's comparative analysis.
+
+To launch the Vega/Vega-Lite live editor:
+
+1. Run a local server rooted in the current directory. Some simple commands to
+   do so include:
+
+    (python 2)  python -m SimpleHTTPServer 8000
+    (python 3)  python -m http.server 8000
+    (nodejs)    npm install http-server -g && http-server -p 8000
+
+2. In a web browser, navigate to http://localhost:8000/. The live editor should
+   load in Vega-Lite mode, and you should be able to select example
+   visualizations from the 2nd drop-down menu at the top.
