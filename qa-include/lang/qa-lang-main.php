@@ -105,7 +105,7 @@
 		'nav_login' => 'Login',
 		'nav_logout' => 'Logout',
 		'nav_most_answers' => 'Most answers',
-		'nav_most_recent' => 'Related',
+		'nav_most_recent' => 'Recent',
 		'nav_most_views' => 'Most views',
 		'nav_most_votes' => 'Most votes',
 		'nav_no_answer' => 'No answer',

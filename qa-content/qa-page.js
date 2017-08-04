@@ -1,178 +1,178 @@
-$('#mmd').ready(function () {
-    $('#mmd').submit(function(e) {
-        e.preventDefault(); // don't submit multiple times
-        this.submit(); // use the native submit method of the form element
-        var checkValue=null;
-        // var inputElements=document.getElementById('2');
-
-        // for(var i=0;)
-        var intes=[];
-            for(var i=1;i<17;i++){
-                var inputElements=document.getElementById(i+'');
-                console.log(inputElements);
-                // alert("ASd")
-                // alert("asdasdlkara")
-                // console.log(inputElements.checked);
-                if(inputElements.checked)
-                    intes.push(1);
-                else {
-                    intes.push(0);
-                }
-                console.log(intes[i-1]);
-            }
-
-
-            // alert(intes[1]);
-            // alert(intes[10]);
-            $.ajax({
-                type:'POST',
-                url:'./test.php',
-                data:{
-                    health:intes[0],
-                    health_eating:intes[1],
-                    medicine :intes[2],
-                    exercise:intes[3],
-                    history:intes[4],
-                    World_history:intes[5],
-                    World_War:intes[6],
-                    Philosophy:intes[7],
-                    Technology :intes[8],
-                    Science :intes[9],
-                    Physics :intes[10],
-                    Computer_science:intes[11],
-                    Design :intes[12],
-                    Photography :intes[13],
-                    Fine_art:intes[14],
-                    Web_design:intes[15],
-                },
-                success: function (){
-                    // content.html(response);
-                    console.log("Asdadaswewfs");
-                }
-            });
-            // alert(data);
-            // alert('asf+1')
-
-        // if(!regForm)
-        // {
-        // 	alert("i am defned")
-        // }
-        // else{
-        // 	alert('asdasd')
-        // 	regForm.innerHTML +="<input type='checkbox' value='' name='group2' style='margin-left:140px;vertical-align:sub' />History";
-        // }
-    });
-})
-
-window.onload=function(){
-    var inter={
-        1:'health',
-        2:'healthy eating',
-        3:'medicine',
-        4:'exercise',
-        5:'History',
-        6:'World History',
-        7:'World War ||',
-        8:'Philosophy',
-        9:'Technology',
-        10:'Science',
-        11:'Physics',
-        12:'Computer science',
-        13:'design',
-        14:'Photography',
-        15:'Fine Art',
-        16:'Wb Design'
-    }
-    // // console.log(inter[1]);
-    var x=document.getElementById('sModel');
-    var regFrom=document.getElementById('mmd');
-
-// <button id='myBtn'>Open Modal</button>
-    var openModelBtn = document.createElement("a");
-    openModelBtn.setAttribute("id", "myBtn");
-    openModelBtn.setAttribute("class", "continueBtn");
-    openModelBtn.setAttribute("style", "display:inline-block");
-    var openModelBtnText = document.createTextNode('continue');
-    openModelBtn.appendChild(openModelBtnText)
-    regFrom.appendChild(openModelBtn);
-    var openModelBtnId=document.getElementById('myBtn');
-    // var btnDiv = document.createElement("div");
-    // btnDiv.setAttribute("id", "myModel");
-    // btnDiv.setAttribute("class", "model");
-    // var btnDiv2 = document.createElement("div");
-    // btnDiv2.setAttribute("id", "model-content");
-    // btnDiv.appendChild(btnDiv2);
-    // x.appendChild(btn1);
-    // x.appendChild(btnDiv);
-
-// Get the modal
-
-var modal = document.getElementById('myModal');
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-var regbtn = document.getElementById("okbtn");
-var regbtn1 = document.getElementById("regbtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-    $(modal).slideDown();
-}
-regbtn.onclick=function(){
-  modal.style.display = "none";
-  regbtn1.style.display="block";
-  openModelBtnId.style.display="none"
-
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-    var bigCon = document.createElement("div");
-    bigCon.setAttribute("style", "margin-top:-10px");
-    for(var w=1;w<17;w++){
-
-        var con = document.createElement("span");
-        con.setAttribute("style", "display: inline-block;width: 24%;text-align: left;margin-top:25px;margin-right: 5px;background: url('./qa-content/img/"+w+".jpg');background-size: cover;background-repeat: no-repeat;height: 75px;text-align: right;");
-        // con.setAttribute("style", "");
-        var node = document.createElement("input");
-        node.setAttribute("type", "checkbox");
-        node.setAttribute("style", "    transform: translateX(-105px);min-width: 16px;min-height: 30px;");
-        node.setAttribute("id", ''+w);
-        node.setAttribute("value", ''+inter[w]);
-        var pargraph = document.createElement("p");
-        pargraph.setAttribute("style",' transform: translateY(38px);width: 100%;background: #666666;text-align: center;color:#fff');
-
-        var textnode = document.createTextNode(inter[w]);
-        // console.log(textnode);
-
-        pargraph.appendChild(textnode);
-        con.appendChild(node);
-        con.appendChild(pargraph);
-        bigCon.appendChild(con);
-
-        if(w%4==0)
-        {
-            var line=document.createElement('br');
-            bigCon.appendChild(line);
-        }
-        //  document.getElementById("myList").appendChild(node);
-    }
-    x.appendChild(bigCon);
-    // document.getElementById("myList").appendChild(node);
-
-}
+// $('#mmd').ready(function () {
+//     $('#mmd').submit(function(e) {
+//         e.preventDefault(); // don't submit multiple times
+//         this.submit(); // use the native submit method of the form element
+//         var checkValue=null;
+//         // var inputElements=document.getElementById('2');
+//
+//         // for(var i=0;)
+//         var intes=[];
+//             for(var i=1;i<17;i++){
+//                 var inputElements=document.getElementById(i+'');
+//                 console.log(inputElements);
+//                 // alert("ASd")
+//                 // alert("asdasdlkara")
+//                 // console.log(inputElements.checked);
+//                 if(inputElements.checked)
+//                     intes.push(1);
+//                 else {
+//                     intes.push(0);
+//                 }
+//                 console.log(intes[i-1]);
+//             }
+//
+//
+//             // alert(intes[1]);
+//             // alert(intes[10]);
+//             $.ajax({
+//                 type:'POST',
+//                 url:'./test.php',
+//                 data:{
+//                     health:intes[0],
+//                     health_eating:intes[1],
+//                     medicine :intes[2],
+//                     exercise:intes[3],
+//                     history:intes[4],
+//                     World_history:intes[5],
+//                     World_War:intes[6],
+//                     Philosophy:intes[7],
+//                     Technology :intes[8],
+//                     Science :intes[9],
+//                     Physics :intes[10],
+//                     Computer_science:intes[11],
+//                     Design :intes[12],
+//                     Photography :intes[13],
+//                     Fine_art:intes[14],
+//                     Web_design:intes[15],
+//                 },
+//                 success: function (){
+//                     // content.html(response);
+//                     console.log("Asdadaswewfs");
+//                 }
+//             });
+//             // alert(data);
+//             // alert('asf+1')
+//
+//         // if(!regForm)
+//         // {
+//         // 	alert("i am defned")
+//         // }
+//         // else{
+//         // 	alert('asdasd')
+//         // 	regForm.innerHTML +="<input type='checkbox' value='' name='group2' style='margin-left:140px;vertical-align:sub' />History";
+//         // }
+//     });
+// })
+//
+// window.onload=function(){
+//     var inter={
+//         1:'health',
+//         2:'healthy eating',
+//         3:'medicine',
+//         4:'exercise',
+//         5:'History',
+//         6:'World History',
+//         7:'World War ||',
+//         8:'Philosophy',
+//         9:'Technology',
+//         10:'Science',
+//         11:'Physics',
+//         12:'Computer science',
+//         13:'design',
+//         14:'Photography',
+//         15:'Fine Art',
+//         16:'Wb Design'
+//     }
+//     // // console.log(inter[1]);
+//     var x=document.getElementById('sModel');
+//     var regFrom=document.getElementById('mmd');
+//
+// // <button id='myBtn'>Open Modal</button>
+//     var openModelBtn = document.createElement("a");
+//     openModelBtn.setAttribute("id", "myBtn");
+//     openModelBtn.setAttribute("class", "continueBtn");
+//     openModelBtn.setAttribute("style", "display:inline-block");
+//     var openModelBtnText = document.createTextNode('continue');
+//     openModelBtn.appendChild(openModelBtnText)
+//     regFrom.appendChild(openModelBtn);
+//     var openModelBtnId=document.getElementById('myBtn');
+//     // var btnDiv = document.createElement("div");
+//     // btnDiv.setAttribute("id", "myModel");
+//     // btnDiv.setAttribute("class", "model");
+//     // var btnDiv2 = document.createElement("div");
+//     // btnDiv2.setAttribute("id", "model-content");
+//     // btnDiv.appendChild(btnDiv2);
+//     // x.appendChild(btn1);
+//     // x.appendChild(btnDiv);
+//
+// // Get the modal
+//
+// var modal = document.getElementById('myModal');
+//
+// // Get the button that opens the modal
+// var btn = document.getElementById("myBtn");
+// var regbtn = document.getElementById("okbtn");
+// var regbtn1 = document.getElementById("regbtn");
+//
+// // Get the <span> element that closes the modal
+// var span = document.getElementsByClassName("close")[0];
+//
+// // When the user clicks on the button, open the modal
+// btn.onclick = function() {
+//     $(modal).slideDown();
+// }
+// regbtn.onclick=function(){
+//   modal.style.display = "none";
+//   regbtn1.style.display="block";
+//   openModelBtnId.style.display="none"
+//
+// }
+//
+// // When the user clicks on <span> (x), close the modal
+// span.onclick = function() {
+//     modal.style.display = "none";
+// }
+//
+// // When the user clicks anywhere outside of the modal, close it
+// window.onclick = function(event) {
+//     if (event.target == modal) {
+//         modal.style.display = "none";
+//     }
+// }
+//     var bigCon = document.createElement("div");
+//     bigCon.setAttribute("style", "margin-top:-10px");
+//     for(var w=1;w<17;w++){
+//
+//         var con = document.createElement("span");
+//         con.setAttribute("style", "display: inline-block;width: 24%;text-align: left;margin-top:25px;margin-right: 5px;background: url('./qa-content/img/"+w+".jpg');background-size: cover;background-repeat: no-repeat;height: 75px;text-align: right;");
+//         // con.setAttribute("style", "");
+//         var node = document.createElement("input");
+//         node.setAttribute("type", "checkbox");
+//         node.setAttribute("style", "    transform: translateX(-105px);min-width: 16px;min-height: 30px;");
+//         node.setAttribute("id", ''+w);
+//         node.setAttribute("value", ''+inter[w]);
+//         var pargraph = document.createElement("p");
+//         pargraph.setAttribute("style",' transform: translateY(38px);width: 100%;background: #666666;text-align: center;color:#fff');
+//
+//         var textnode = document.createTextNode(inter[w]);
+//         // console.log(textnode);
+//
+//         pargraph.appendChild(textnode);
+//         con.appendChild(node);
+//         con.appendChild(pargraph);
+//         bigCon.appendChild(con);
+//
+//         if(w%4==0)
+//         {
+//             var line=document.createElement('br');
+//             bigCon.appendChild(line);
+//         }
+//         //  document.getElementById("myList").appendChild(node);
+//     }
+//     x.appendChild(bigCon);
+//     // document.getElementById("myList").appendChild(node);
+//
+// }
 /*
  Question2Answer by Gideon Greenspan and contributors
 

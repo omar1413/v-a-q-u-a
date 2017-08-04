@@ -22,90 +22,90 @@
  More about this license: http://www.question2answer.org/license.php
  */
 //Vaqua for ask page
-var askButton, tagField, availableTags, tags =["select tag", "health", "health_eating","medicine","exercise",'history','World_history',
-        'World_War','Philosophy','Technology','Science','physics','Computer_science','Design','Photography','Fine_art','Web_design'],
-    show = [false,true,true,true,true], notAllowedTags = {};
-
-window.onload = function () {
-
-    askButton = document.getElementById("questionForm");
-    tagField = document.getElementById("tags");
-    availableTags = document.getElementById('available_tags');
-    tagField.value = '';
-    makeTagList();
-    askButton.onsubmit = function () {
-        if (tagField.value == '') {
-            alert('tags field is null')
-            return false;
-        }
-        else {
-            var tagList = tagField.value.split(" ");
-            for (var i = 0; i < tagList.length; i++) {
-
-                if (!searchTag(tagList[i],tags)&&tagList[i]!="") {
-                    alert(tagList[i] + " not allowed");
-                    return false;
-                }
-            }
-
-        }
-
-        return true;
-    }
-
-}
-function searchTag(tag,list)
-{
-    var found  = false;
-    for(var i = 0 ; i <list.length;i++)
-    {
-       if(tag.toLowerCase() == list[i].toLowerCase())
-           found = true;
-    }
-    return found;
-}
-function makeTagList() {
-    availableTags.innerHTML = '';
-    for (var i = 0; i < tags.length; i++) {
-        if (tags[i] != '')
-            availableTags.innerHTML += '<option>' + tags[i] + '</option>';
-    }
-}
-function setTag() {
-    for(var i = 1 ; i <tags.length; i++)
-    {
-        if(!searchTag(tags[i],tagField.value.split(" ")))
-            notAllowedTags[tags[i]] = undefined;
-    }
-    if (availableTags.selectedIndex != 0 && notAllowedTags[tags[availableTags.selectedIndex]] == undefined) {
-        tagField.value += " " + tags[availableTags.selectedIndex] + " ";
-        notAllowedTags[tags[availableTags.selectedIndex]] = tags[availableTags.selectedIndex];
-        // console.log(tags[availableTags.selectedIndex])
-    }
-    availableTags.selectedIndex = 0;
-}
-function qa_title_change(value) {
-    qa_ajax_post('asktitle', {title: value}, function (lines) {
-        if (lines[0] == '1') {
-            if (lines[1].length) {
-                qa_tags_examples = lines[1];
-                qa_tag_hints(true);
-            }
-
-            if (lines.length > 2) {
-                var simelem = document.getElementById('similar');
-                if (simelem)
-                    simelem.innerHTML = lines.slice(2).join('\n');
-            }
-
-        } else if (lines[0] == '0')
-            alert(lines[1]);
-        else
-            qa_ajax_error();
-    });
-
-    qa_show_waiting_after(document.getElementById('similar'), true);
-}
+// var askButton, tagField, availableTags, tags =["select tag", "health", "health_eating","medicine","exercise",'history','World_history',
+//         'World_War','Philosophy','Technology','Science','physics','Computer_science','Design','Photography','Fine_art','Web_design'],
+//     show = [false,true,true,true,true], notAllowedTags = {};
+//
+// window.onload = function () {
+//
+//     askButton = document.getElementById("questionForm");
+//     tagField = document.getElementById("tags");
+//     availableTags = document.getElementById('available_tags');
+//     tagField.value = '';
+//     makeTagList();
+//     askButton.onsubmit = function () {
+//         if (tagField.value == '') {
+//             alert('tags field is null')
+//             return false;
+//         }
+//         else {
+//             var tagList = tagField.value.split(" ");
+//             for (var i = 0; i < tagList.length; i++) {
+//
+//                 if (!searchTag(tagList[i],tags)&&tagList[i]!="") {
+//                     alert(tagList[i] + " not allowed");
+//                     return false;
+//                 }
+//             }
+//
+//         }
+//
+//         return true;
+//     }
+//
+// }
+// function searchTag(tag,list)
+// {
+//     var found  = false;
+//     for(var i = 0 ; i <list.length;i++)
+//     {
+//        if(tag.toLowerCase() == list[i].toLowerCase())
+//            found = true;
+//     }
+//     return found;
+// }
+// function makeTagList() {
+//     availableTags.innerHTML = '';
+//     for (var i = 0; i < tags.length; i++) {
+//         if (tags[i] != '')
+//             availableTags.innerHTML += '<option>' + tags[i] + '</option>';
+//     }
+// }
+// function setTag() {
+//     for(var i = 1 ; i <tags.length; i++)
+//     {
+//         if(!searchTag(tags[i],tagField.value.split(" ")))
+//             notAllowedTags[tags[i]] = undefined;
+//     }
+//     if (availableTags.selectedIndex != 0 && notAllowedTags[tags[availableTags.selectedIndex]] == undefined) {
+//         tagField.value += " " + tags[availableTags.selectedIndex] + " ";
+//         notAllowedTags[tags[availableTags.selectedIndex]] = tags[availableTags.selectedIndex];
+//         // console.log(tags[availableTags.selectedIndex])
+//     }
+//     availableTags.selectedIndex = 0;
+// }
+// function qa_title_change(value) {
+//     qa_ajax_post('asktitle', {title: value}, function (lines) {
+//         if (lines[0] == '1') {
+//             if (lines[1].length) {
+//                 qa_tags_examples = lines[1];
+//                 qa_tag_hints(true);
+//             }
+//
+//             if (lines.length > 2) {
+//                 var simelem = document.getElementById('similar');
+//                 if (simelem)
+//                     simelem.innerHTML = lines.slice(2).join('\n');
+//             }
+//
+//         } else if (lines[0] == '0')
+//             alert(lines[1]);
+//         else
+//             qa_ajax_error();
+//     });
+//
+//     qa_show_waiting_after(document.getElementById('similar'), true);
+// }
 
 function qa_html_unescape(html) {
     return html.replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>');

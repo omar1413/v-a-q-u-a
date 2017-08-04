@@ -1274,16 +1274,16 @@ class qa_html_theme_base
 
     public function form_text_single_row($field, $style)
     {
-        $param = explode(" ", $field['tags']);
-        for ($i = 0; $i < count($param); $i++) {
-            if ($param[$i] == 'id="tags"') {
-                    $this->output('Avaialble tags: <select id = "available_tags" onclick="setTag()">');
-                    $this->output('</select>');
-                    break;
-
-
-            }
-        }
+//        $param = explode(" ", $field['tags']);
+//        for ($i = 0; $i < count($param); $i++) {
+//            if ($param[$i] == 'id="tags"') {
+//                    $this->output('Avaialble tags: <select id = "available_tags" onclick="setTag()">');
+//                    $this->output('</select>');
+//                    break;
+//
+//
+//            }
+//        }
 
 
         $this->output('<input ' . @$field['tags'] . ' type="text" value="' . @$field['value'] . '" class="qa-form-' . $style . '-text"/>');
